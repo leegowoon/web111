@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+
+.clearfix::after{content: ""; clear: both; display: block;}
+
+body{
+    background-color: #010000;
+    padding: 5vw; /* 화면넓이에 5% */
+}
+
+.wrap{display: flex; justify-content: center;}
+.wrap>div{
+    position: relative;
+    float: left;
+    width: 370px; height: 750px;
+    margin: 0 2vw;
+    
+
+}
+.wrap>div img,
+.wrap>div .site{
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+}
+
+.wrap>div img{
+    z-index: 10;
+    
+}
+
+.wrap>div .site iframe{
+    background-color: #fff;
+    background-clip: content-box;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 90px 6px 94px 21px;
+}
+

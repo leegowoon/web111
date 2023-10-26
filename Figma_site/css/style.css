@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+.clearfix::after{content: ""; display: block; clear: both;}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+header{
+    background-color: #7E57C2;
+    height: 50px;
+    position: relative;
+}
+header h2{
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    line-height: 50px;
+}
+header img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header .menu_Icon_left{left: 25px;}
+header .menu_Icon_right{right: 25px;}
+
+
+
+/* --------------- index --------------- */
+
+body{}
+body .fashion_app{
+    /* background-image: url(../img/welcome_bg.png); */
+    background: url(../img/welcome_bg.png);
+}
+
+
+
+
+
+
+/* --------------- Shop_Categories --------------- */
+
+.shop_slide img{
+    width: 100%;
+    
+}
+
+.shop_slide .slick-dots{
+    text-align: center;
+    float: left;
+    
+}
+.shop_slide .slick-dots li{
+    margin: 5px;
+}
+.shop_slide .slick-dots li button{
+    width: 13px; height: 13px;
+    background-color: #7E57C2;
+    border-radius: 50%;
+    font-size: 0;
+    cursor: pointer;
+    transform: scaleX(1);
+    transition: 0.3s;
+}
+
+.shop_slide img .slick-dots li.slick-active button{
+    background-color: #7E57C2;
+}
+
+
+
+
+
+
+/* --------------- Shop --------------- */
+
+.Top_Product{
+    position: relative;
+    padding: 30px 25px 0 0;
+}
+.Top_Product img{
+    width: 100%;
+}
+.Top_Product .info{
+    background-color: #fff;
+    position: absolute;
+    left: 50px; right: 0; bottom: -37px;
+    padding: 10px 30px 10px 20px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25); /* x y blur spread*/
+}
+
+.Top_Product .info h2{
+    font-size: 18px;
+    line-height: 29px;
+    margin-bottom: 5px;
+    color: #757575;
+}
+
+.Top_Product .info .desc{
+    
+}
+.Top_Product .info .desc .price{
+    color: #7E57C2;
+}
+.Top_Product .info .desc .rate{
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    color: #7E57C2;
+}
+.Top_Product .info .desc .rate i{}
+
+
+
+
+
+.shop_product{
+    padding: 67px 0 0 25px;
+    overflow: hidden;
+}
+.shop_product .product_list{
+    width: 500px;
+}
+.shop_product .product_list .slide{
+    float: left;
+    width: 125px;
+    margin-right: 25px;
+}
+.shop_product .product_list .slide img{
+    width: 100%;
+    margin-bottom: 15px;
+    
+}
+.shop_product .product_list .slide h3{
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 25px;
+    color: #757575;
+}
+.shop_product .product_list .slide h4{
+    font-size: 13px;
+    line-height: 21px;
+    color: #7E57C2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .shop_slide img{
+    width: 100%;} */
+
+    /* box-sizing: border-box; */
+
+    /* 밑에 작은 사진 >> width: 100%;
+    글자폰트 넣기 */
+
+
+
+/* 
+li 넓이주고 높이줘서 색주고 옆으로 정렬하기
+ul absolute 주고 위치잡기
+li 첫번째에 class active가 붙는다 slick-active
+
+
+box-sizing: border-box;
+*/
